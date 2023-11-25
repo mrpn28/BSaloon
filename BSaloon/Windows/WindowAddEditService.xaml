@@ -1,0 +1,28 @@
+﻿<Window x:Class="BSaloon.Windows.WindowAddEditService"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BSaloon.Windows"
+        mc:Ignorable="d"
+        Title="WindowAddEditService" Height="567" Width="399">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Label Content="Введите название услуги" FontSize="20" ></Label>
+            <TextBox Name="tbName" Height="36"></TextBox>
+            <Label Content="Введите стоимость" FontSize="20"></Label>
+            <TextBox Name="tbCost" Height="36"></TextBox>
+            <Label Content="Введите длительность в секундах" FontSize="20"></Label>
+            <TextBox Name="tbDurationln" Height="36"></TextBox>
+            <Label Content="Введите описание" FontSize="20"></Label>
+            <TextBox Name="tbDescription" Height="36"></TextBox>
+            <Label Content="Введите скидку" FontSize="20"></Label>
+            <TextBox Name="tbDiscount" Height="36"></TextBox>
+            <Label Content="Введите путь к фото" FontSize="20"></Label>
+            <TextBox Name="tbMainImagePath" Height="36"></TextBox>
+            
+            <Button Name="btnSaveService" Content="Сохранить" Margin="5" Height="34" Click="btnSaveService_Click"></Button>
+            <Button Name="btnCancelService" Content="отменить" Margin="5" Height="34" Click="btnCancelService_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
